@@ -47,7 +47,7 @@ const Blog = () => {
         <ul className="flex justify-center flex-col lg:flex-row my-6">
           {isFetching && <Loader />}
           {!isFetching && !error && mappedList}
-          {!isFetching && mappedList.length === 0 && <Error />}
+          {!isFetching && mappedList?.length === 0 && <Error />}
         </ul>
       </section>
     </Fragment>
