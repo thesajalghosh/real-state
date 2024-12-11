@@ -8,6 +8,8 @@ const Listings = () => {
 
   useEffect(() => {
     divRef.current.scrollIntoView({ behavior: "smooth" });
+
+    
   });
   return (
     <div className="bg-silver pt-20" ref={divRef}>
